@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+background-color:rgb(243, 0, 0);
+margin: 0;
+padding: 0;
+font-family: "poppins", sans-serif;
+box-sizing: border-box;
+display: flex;
+flex-direction: column;
+
+}
+
+#showcase {
+    background-image:url(../Photo/headerimage.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center ;
+    padding: 0 20px;
+}
+
+.showcaseH1 {
+    background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  position: absolute;
+font-family: sans-serif;
+  font-size: 2vw;
+  top: 40vh;
+  left: 30vh;
+  margin: 4px 2px;
+  border-radius: 16px;
+  letter-spacing: 10px;
+  max-width: 500px;
+}
+
+h1 {
+    &.glitch {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-family: sans-serif;
+    font-size: 2vw;
+    max-width: 500px;
+    line-height: 1.6;
+    text-align: center;
+    &::before, &::after {
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        content: attr(title);
+        position:absolute;
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
+        border: none;
+        font-size: 2vw;
+        top: 40vh;
+        left: 30vh;
+        margin: 4px 2px;
+        border-radius: 16px;
+        padding: 15px 32px;
+        background: black;
+        color: greenyellow;
+        max-width: 500px;
+        overflow: hidden;
+        line-height: 1.6;
+        top: 0;
+    }
+    &::before{
+    left: 3px;
+    text-shadow: -2px 0 red;
+    animation-name: glitch-animation-1;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    }
+    &::after {
+    left: 3px;
+    text-shadow: -2px 0 blue;
+    animation-name: glitch-animation-2;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+        }
+    }
+}
+
+$steps: 20;
+@keyframes glitch-animation-1 {
+    @for $i from 0 through $steps {
+        #{percentage($i*(12/$steps))} {
+            clip: rect(random(150)+px, 100vw, random(150)+px, 30px);
+        }
+                
+    }
+};
+
+@keyframes glitch-animation-2 {
+    @for $i from 0 through $steps {
+        #{percentage($i*(1/$steps))} {
+         clip: rect(random(150)+px, 100vw, random(150)+px, 30px) ;
+        }
+        
+    }
+};
+
+
+
+
+.showcaseH2 {
+    background-color: #eab676;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    position: absolute;
+    font-size: 1.5vw;
+    margin: 20px 10px;
+    top: 37vh;
+    left: 10vh;
+    border-radius: 16px;
+}
+
+
+.sectionA {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 4vh;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: black;
+    position: fixed;
+    font-family: 'Courier New', Courier, monospace;
+    color: beige;
+}

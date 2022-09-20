@@ -1,0 +1,417 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(243, 0, 0);
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#showcase {
+  background-image: url(../Photo/headerimage.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  padding: 0 20px;
+}
+
+.showcaseH1 {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  position: absolute;
+  font-family: sans-serif;
+  font-size: 2vw;
+  top: 40vh;
+  left: 30vh;
+  margin: 4px 2px;
+  border-radius: 16px;
+  letter-spacing: 10px;
+  max-width: 500px;
+}
+
+h1.glitch {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-family: sans-serif;
+  font-size: 2vw;
+  max-width: 500px;
+  line-height: 1.6;
+  text-align: center;
+}
+h1.glitch::before, h1.glitch::after {
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  content: attr(title);
+  position: absolute;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  font-size: 2vw;
+  top: 40vh;
+  left: 30vh;
+  margin: 4px 2px;
+  border-radius: 16px;
+  padding: 15px 32px;
+  background: black;
+  color: greenyellow;
+  max-width: 500px;
+  overflow: hidden;
+  line-height: 1.6;
+  top: 0;
+}
+h1.glitch::before {
+  left: 3px;
+  text-shadow: -2px 0 red;
+  -webkit-animation-name: glitch-animation-1;
+          animation-name: glitch-animation-1;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+h1.glitch::after {
+  left: 3px;
+  text-shadow: -2px 0 blue;
+  -webkit-animation-name: glitch-animation-2;
+          animation-name: glitch-animation-2;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+@-webkit-keyframes glitch-animation-1 {
+  0% {
+    clip: rect(122px, 100vw, 96px, 30px);
+  }
+  60% {
+    clip: rect(93px, 100vw, 48px, 30px);
+  }
+  120% {
+    clip: rect(35px, 100vw, 9px, 30px);
+  }
+  180% {
+    clip: rect(139px, 100vw, 61px, 30px);
+  }
+  240% {
+    clip: rect(144px, 100vw, 9px, 30px);
+  }
+  300% {
+    clip: rect(21px, 100vw, 105px, 30px);
+  }
+  360% {
+    clip: rect(140px, 100vw, 48px, 30px);
+  }
+  420% {
+    clip: rect(82px, 100vw, 91px, 30px);
+  }
+  480% {
+    clip: rect(2px, 100vw, 48px, 30px);
+  }
+  540% {
+    clip: rect(94px, 100vw, 78px, 30px);
+  }
+  600% {
+    clip: rect(128px, 100vw, 45px, 30px);
+  }
+  660% {
+    clip: rect(28px, 100vw, 147px, 30px);
+  }
+  720% {
+    clip: rect(117px, 100vw, 71px, 30px);
+  }
+  780% {
+    clip: rect(146px, 100vw, 32px, 30px);
+  }
+  840% {
+    clip: rect(90px, 100vw, 142px, 30px);
+  }
+  900% {
+    clip: rect(52px, 100vw, 27px, 30px);
+  }
+  960% {
+    clip: rect(145px, 100vw, 106px, 30px);
+  }
+  1020% {
+    clip: rect(94px, 100vw, 76px, 30px);
+  }
+  1080% {
+    clip: rect(69px, 100vw, 138px, 30px);
+  }
+  1140% {
+    clip: rect(10px, 100vw, 68px, 30px);
+  }
+  1200% {
+    clip: rect(72px, 100vw, 78px, 30px);
+  }
+}
+
+@keyframes glitch-animation-1 {
+  0% {
+    clip: rect(122px, 100vw, 96px, 30px);
+  }
+  60% {
+    clip: rect(93px, 100vw, 48px, 30px);
+  }
+  120% {
+    clip: rect(35px, 100vw, 9px, 30px);
+  }
+  180% {
+    clip: rect(139px, 100vw, 61px, 30px);
+  }
+  240% {
+    clip: rect(144px, 100vw, 9px, 30px);
+  }
+  300% {
+    clip: rect(21px, 100vw, 105px, 30px);
+  }
+  360% {
+    clip: rect(140px, 100vw, 48px, 30px);
+  }
+  420% {
+    clip: rect(82px, 100vw, 91px, 30px);
+  }
+  480% {
+    clip: rect(2px, 100vw, 48px, 30px);
+  }
+  540% {
+    clip: rect(94px, 100vw, 78px, 30px);
+  }
+  600% {
+    clip: rect(128px, 100vw, 45px, 30px);
+  }
+  660% {
+    clip: rect(28px, 100vw, 147px, 30px);
+  }
+  720% {
+    clip: rect(117px, 100vw, 71px, 30px);
+  }
+  780% {
+    clip: rect(146px, 100vw, 32px, 30px);
+  }
+  840% {
+    clip: rect(90px, 100vw, 142px, 30px);
+  }
+  900% {
+    clip: rect(52px, 100vw, 27px, 30px);
+  }
+  960% {
+    clip: rect(145px, 100vw, 106px, 30px);
+  }
+  1020% {
+    clip: rect(94px, 100vw, 76px, 30px);
+  }
+  1080% {
+    clip: rect(69px, 100vw, 138px, 30px);
+  }
+  1140% {
+    clip: rect(10px, 100vw, 68px, 30px);
+  }
+  1200% {
+    clip: rect(72px, 100vw, 78px, 30px);
+  }
+}
+@-webkit-keyframes glitch-animation-2 {
+  0% {
+    clip: rect(105px, 100vw, 3px, 30px);
+  }
+  5% {
+    clip: rect(113px, 100vw, 52px, 30px);
+  }
+  10% {
+    clip: rect(141px, 100vw, 93px, 30px);
+  }
+  15% {
+    clip: rect(35px, 100vw, 101px, 30px);
+  }
+  20% {
+    clip: rect(115px, 100vw, 34px, 30px);
+  }
+  25% {
+    clip: rect(136px, 100vw, 150px, 30px);
+  }
+  30% {
+    clip: rect(104px, 100vw, 35px, 30px);
+  }
+  35% {
+    clip: rect(107px, 100vw, 71px, 30px);
+  }
+  40% {
+    clip: rect(38px, 100vw, 39px, 30px);
+  }
+  45% {
+    clip: rect(139px, 100vw, 86px, 30px);
+  }
+  50% {
+    clip: rect(47px, 100vw, 2px, 30px);
+  }
+  55% {
+    clip: rect(124px, 100vw, 134px, 30px);
+  }
+  60% {
+    clip: rect(17px, 100vw, 81px, 30px);
+  }
+  65% {
+    clip: rect(138px, 100vw, 80px, 30px);
+  }
+  70% {
+    clip: rect(43px, 100vw, 136px, 30px);
+  }
+  75% {
+    clip: rect(77px, 100vw, 15px, 30px);
+  }
+  80% {
+    clip: rect(77px, 100vw, 72px, 30px);
+  }
+  85% {
+    clip: rect(56px, 100vw, 2px, 30px);
+  }
+  90% {
+    clip: rect(92px, 100vw, 105px, 30px);
+  }
+  95% {
+    clip: rect(2px, 100vw, 77px, 30px);
+  }
+  100% {
+    clip: rect(106px, 100vw, 109px, 30px);
+  }
+}
+@keyframes glitch-animation-2 {
+  0% {
+    clip: rect(105px, 100vw, 3px, 30px);
+  }
+  5% {
+    clip: rect(113px, 100vw, 52px, 30px);
+  }
+  10% {
+    clip: rect(141px, 100vw, 93px, 30px);
+  }
+  15% {
+    clip: rect(35px, 100vw, 101px, 30px);
+  }
+  20% {
+    clip: rect(115px, 100vw, 34px, 30px);
+  }
+  25% {
+    clip: rect(136px, 100vw, 150px, 30px);
+  }
+  30% {
+    clip: rect(104px, 100vw, 35px, 30px);
+  }
+  35% {
+    clip: rect(107px, 100vw, 71px, 30px);
+  }
+  40% {
+    clip: rect(38px, 100vw, 39px, 30px);
+  }
+  45% {
+    clip: rect(139px, 100vw, 86px, 30px);
+  }
+  50% {
+    clip: rect(47px, 100vw, 2px, 30px);
+  }
+  55% {
+    clip: rect(124px, 100vw, 134px, 30px);
+  }
+  60% {
+    clip: rect(17px, 100vw, 81px, 30px);
+  }
+  65% {
+    clip: rect(138px, 100vw, 80px, 30px);
+  }
+  70% {
+    clip: rect(43px, 100vw, 136px, 30px);
+  }
+  75% {
+    clip: rect(77px, 100vw, 15px, 30px);
+  }
+  80% {
+    clip: rect(77px, 100vw, 72px, 30px);
+  }
+  85% {
+    clip: rect(56px, 100vw, 2px, 30px);
+  }
+  90% {
+    clip: rect(92px, 100vw, 105px, 30px);
+  }
+  95% {
+    clip: rect(2px, 100vw, 77px, 30px);
+  }
+  100% {
+    clip: rect(106px, 100vw, 109px, 30px);
+  }
+}
+.showcaseH2 {
+  background-color: #eab676;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  position: absolute;
+  font-size: 1.5vw;
+  margin: 20px 10px;
+  top: 37vh;
+  left: 10vh;
+  border-radius: 16px;
+}
+
+.sectionA {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 4vh;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background-color: black;
+  position: fixed;
+  font-family: "Courier New", Courier, monospace;
+  color: beige;
+}
